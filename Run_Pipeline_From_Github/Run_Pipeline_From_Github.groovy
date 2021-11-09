@@ -1,10 +1,31 @@
 pipeline {
     agent any
     stages {
-        stage('Build_mock') {
+        stage('mock_syncing') {
             steps {
                 echo '--------------------------------------------------------------'
-                echo '   If I was building the engine this is where I would do it   '
+                echo ' mock syncing... complete'
+                echo '--------------------------------------------------------------'
+            }
+        }
+        stage('mock_building') {
+            steps {
+                echo '--------------------------------------------------------------'
+                echo '  mock building... complete   '
+                echo '--------------------------------------------------------------'
+            }
+        }
+        stage('mock_testing') {
+            steps {
+                echo '--------------------------------------------------------------'
+                echo '  mock testing... complete   '
+                echo '--------------------------------------------------------------'
+            }
+        }
+        stage('mock_publishing') {
+            steps {
+                echo '--------------------------------------------------------------'
+                echo '  mock publishing... complete   '
                 echo '--------------------------------------------------------------'
             }
         }
